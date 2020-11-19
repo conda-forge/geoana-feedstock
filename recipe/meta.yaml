@@ -9,7 +9,7 @@ source:
   sha256: 7f37a72a722f5f0690fdefe0cbafc59d613143962e154c87210a0b4f6d1d3730
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -20,7 +20,7 @@ requirements:
   run:
     - python
     - future
-    - matplotlib
+    - matplotlib-base
     - numpy >=1.7
     - properties
     - vectormath
