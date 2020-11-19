@@ -10,7 +10,6 @@ source:
 
 build:
   number: 0
-  script: "export GEOANA_BUILD_EXT=1; {{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
