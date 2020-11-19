@@ -35,7 +35,7 @@ test:
     - geoana
     - geoana.earthquake
     - geoana.em
-    - geoana.kernals._extensions
+    - geoana.kernels._extensions
 
 about:
   home: https://www.simpeg.xyz
