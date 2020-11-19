@@ -19,12 +19,12 @@ requirements:
   host:
     - python
     - pip
-    - numpy
+    - numpy >=1.8
     - cython >=0.2
   run:
     - python
     - future
-    - matplotlib
+    - matplotlib-base
     - {{ pin_compatible('numpy') }}
     - properties
     - vectormath
