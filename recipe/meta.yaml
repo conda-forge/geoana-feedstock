@@ -10,28 +10,32 @@ source:
 
 build:
   number: 0
-  noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
+  build:
+    - {{ compiler('cxx') }}
   host:
     - python
     - pip
+    - numpy >=1.8
+    - cython >=0.2
   run:
     - python
     - future
     - matplotlib-base
-    - numpy >=1.7
+    - {{ pin_compatible('numpy') }}
     - properties
     - vectormath
     - scipy >=0.13
     - utm
+    - empymod
 
 test:
   imports:
     - geoana
     - geoana.earthquake
     - geoana.em
+    - geoana.kernels._extensions
 
 about:
   home: https://www.simpeg.xyz
