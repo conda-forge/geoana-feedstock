@@ -5,11 +5,9 @@ Home: https://www.simpeg.xyz
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geoana-feedstock/blob/master/LICENSE.txt)
 
 Summary: Interactive geoscience (mostly) analytic functions.
-
-
 
 Current build status
 ====================
