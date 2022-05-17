@@ -1,4 +1,4 @@
-{% set version = "0.1.2" %}
+{% set version = "0.2.2" %}
 
 package:
   name: geoana
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/geoana/geoana-{{ version }}.tar.gz
-  sha256: 0d66150ef9da02891e0c20c2d30e522cbfd9fcb13e4227bbc1ec746bdafb6c54
+  sha256: 78b3a05906e438078042e158bfeb064575e2fd0010f05c129179509175f4a51f
 
 build:
   number: 0
@@ -21,11 +21,8 @@ requirements:
     - cython >=0.2
   run:
     - python
-    - future
     - matplotlib-base
     - {{ pin_compatible('numpy') }}
-    - properties
-    - vectormath
     - scipy >=0.13
     - utm
     - empymod
