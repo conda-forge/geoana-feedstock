@@ -21,11 +21,8 @@ requirements:
     - cython >=0.2
   run:
     - python
-    - future
     - matplotlib-base
     - {{ pin_compatible('numpy') }}
-    - properties
-    - vectormath
     - scipy >=0.13
     - utm
     - empymod
