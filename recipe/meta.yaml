@@ -1,4 +1,4 @@
-{% set version = "0.0.6" %}
+{% set version = "0.4.0" %}
 
 package:
   name: geoana
@@ -6,32 +6,33 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/geoana/geoana-{{ version }}.tar.gz
-  sha256: 7f37a72a722f5f0690fdefe0cbafc59d613143962e154c87210a0b4f6d1d3730
+  sha256: e95bb3974019111e0522a6955ee735cca71fa11554647fafcbdbee8b91524495
 
 build:
-  number: 1
-  noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
 
 requirements:
+  build:
+    - {{ compiler('cxx') }}
   host:
     - python
     - pip
+    - numpy >=1.8
+    - cython >=0.2
   run:
     - python
-    - future
     - matplotlib-base
-    - numpy >=1.7
-    - properties
-    - vectormath
+    - {{ pin_compatible('numpy') }}
     - scipy >=0.13
     - utm
+    - empymod
 
 test:
   imports:
     - geoana
     - geoana.earthquake
     - geoana.em
+    - geoana.kernels._extensions
 
 about:
   home: https://www.simpeg.xyz
