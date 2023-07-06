@@ -17,13 +17,13 @@ requirements:
   host:
     - python
     - pip
-    - numpy >=1.8
-    - cython >=0.2
+    - numpy >=1.20
+    - cython >=0.29
   run:
     - python
     - matplotlib-base
     - {{ pin_compatible('numpy') }}
-    - scipy >=0.13
+    - scipy >=1.8
     - utm
     - empymod >=2.0
 
