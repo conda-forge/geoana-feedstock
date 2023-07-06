@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: geoana
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/geoana/geoana-{{ version }}.tar.gz
-  sha256: e95bb3974019111e0522a6955ee735cca71fa11554647fafcbdbee8b91524495
+  sha256: bd94df5be307f3e7b6ca4b2abc8475576c9835102245e577dfdaebca0a04260b
 
 build:
   number: 1
