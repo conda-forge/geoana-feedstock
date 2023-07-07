@@ -1,11 +1,11 @@
-About geoana
-============
+About geoana-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geoana-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.simpeg.xyz
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geoana-feedstock/blob/main/LICENSE.txt)
 
 Summary: Interactive geoscience (mostly) analytic functions.
 
