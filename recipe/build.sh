@@ -1,7 +1,7 @@
-#!/bin/bash
+set -ex
 
-set -x
+mkdir builddir
 
-export BUILD_GEOANA_EXT=1
+meson setup ${MESON_ARGS} -Dwith_extensions=true builddir/
 
-$PYTHON -m pip install . --no-deps -vv
+${PYTHON} -m pip install --no-deps -vv --no-build-isolation --config-settings=builddir="builddir" .

@@ -1,3 +1,5 @@
-set "BUILD_GEOANA_EXT=1"
+@echo on
 
-%PYTHON% -m pip install . --no-deps -vv
+%PYTHON% -m pip install --no-deps -vv --no-build-isolation ^
+    --config-settings=setup-args="-Dwith_extensions=true" ^
+    --config-settings=setup-args="--vsenv"
