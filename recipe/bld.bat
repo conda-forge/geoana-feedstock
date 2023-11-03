@@ -1,7 +1,5 @@
 @echo on
 
-mkdir builddir
+%PYTHON% -m build --wheel --no-isolation --skip-dependency-check -Csetup-args="-Dwith_extensions=true" -Csetup-args="--vsenv"
 
-meson setup ${MESON_ARGS} -Dwith_extensions=true --vsenv builddir
-
-%PYTHON% -m pip install --no-deps -vv --no-build-isolation  --config-settings=builddir="builddir" .
+%PYTHON% -m pip install dist/geoana*.whl
