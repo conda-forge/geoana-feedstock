@@ -1,3 +1,5 @@
-set "BUILD_GEOANA_EXT=1"
+@echo on
 
-%PYTHON% -m pip install . --no-deps -vv
+%PYTHON% -m build --wheel --no-isolation --skip-dependency-check -Csetup-args="-Dwith_extensions=true" -Csetup-args="--vsenv"
+
+FOR %%i in (dist\geoana*.whl) DO %PYTHON% -m pip install %%i
