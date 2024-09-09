@@ -9,11 +9,12 @@ source:
   sha256: 4e889997b18ccbfe42e37964e90cdba2418c4cc4d4f2e45e441c47c4a192bcab
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cython                                 # [build_platform != target_platform]
