@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.7.0_rc" %}
 
 package:
   name: geoana
@@ -10,6 +10,7 @@ source:
 
 build:
   number: 0
+  skip: true  # [py<310]
 
 requirements:
   build:
