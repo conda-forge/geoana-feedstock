@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/g/geoana/geoana-{{ version }}.tar.gz
-  sha256: 4e889997b18ccbfe42e37964e90cdba2418c4cc4d4f2e45e441c47c4a192bcab
+  git_url: https://github.com/ilanschnell/bsdiff4.git
+  git_depth: 1 # (Defaults to -1/not shallow)
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
