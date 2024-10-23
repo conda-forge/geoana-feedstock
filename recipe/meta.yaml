@@ -5,8 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  git_url: https://github.com/simpeg/geoana.git
-  git_rev: 979cf234793f81fbc653a82335624916aa10770f
+  git_url: https://github.com/jcapriot/geoana.git
   git_depth: 1 # (Defaults to -1/not shallow)
 
 build:
