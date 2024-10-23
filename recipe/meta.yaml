@@ -6,7 +6,7 @@ package:
 
 source:
   git_url: https://github.com/jcapriot/geoana.git
-  git_rev: c148e1b8e7f98f28688d3b4a83a181d149f08fb4
+  git_tag: pkg-config_test
   git_depth: 1 # (Defaults to -1/not shallow)
 
 build:
