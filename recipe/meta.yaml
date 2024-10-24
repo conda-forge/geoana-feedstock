@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: geoana
@@ -6,14 +6,16 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/geoana/geoana-{{ version }}.tar.gz
-  sha256: 4e889997b18ccbfe42e37964e90cdba2418c4cc4d4f2e45e441c47c4a192bcab
+  sha256: 4bb77f8ca8bfaf53cec540798c8c05b59893ee1ccef4f2d8b10f5b08ad5fe171
 
 build:
-  number: 1
+  number: 0
+  skip: true  # [py<310]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cython                                 # [build_platform != target_platform]
@@ -30,7 +32,7 @@ requirements:
     - setuptools_scm
   run:
     - python
-    - {{ pin_compatible('numpy') }}
+    - numpy
     - scipy >=1.8
     - libdlf
 
