@@ -5,8 +5,8 @@ package:
   version: {{ version }}
 
 source:
-  git_url: https://github.com/simpeg/geoana.git
-  git_depth: 1 # (Defaults to -1/not shallow)
+  url: https://pypi.io/packages/source/g/geoana/geoana-{{ version }}.tar.gz
+  sha256: 4bb77f8ca8bfaf53cec540798c8c05b59893ee1ccef4f2d8b10f5b08ad5fe171
 
 build:
   number: 0
