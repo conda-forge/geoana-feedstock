@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/g/geoana/geoana-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/g/geoana/geoana-{{ version }}.tar.gz
   sha256: 6a03c9f18795141b1a9e1643f4f80ac117d12eb3907a057467dcfbc593781546
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<310]
 
 requirements:
