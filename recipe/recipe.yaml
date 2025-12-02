@@ -1,5 +1,5 @@
 context:
-  version: "0.8.0"
+  version: "0.8.1"
   # ensure is_freethreading gets detected as a used variable
   touch_is_freethreading: ${{ is_freethreading }}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/geoana/geoana-${{ version }}.tar.gz
-  sha256: fd468dd6d7d6532235fbfb68d5b1651ea648a0f6f9cd4a827aa85ea7613dc144
+  sha256: 20fb32b805827e4fef3eb5f41f95c9b606433681a8a2339d19416a2bfec5f76f
 
 build:
   number: 0
