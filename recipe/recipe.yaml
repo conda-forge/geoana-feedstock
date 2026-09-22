@@ -12,7 +12,7 @@ source:
   sha256: 20fb32b805827e4fef3eb5f41f95c9b606433681a8a2339d19416a2bfec5f76f
 
 build:
-  number: 0
+  number: 1
   skip: match(python, "<3.11") or (match(python, "=3.14") and linux and is_freethreading and (aarch64 or ppc64le))
 
 requirements:
